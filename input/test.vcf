@@ -1,0 +1,10 @@
+##fileformat=VCFv4.1
+##fileDate=20211204
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+1	10449	.	C	CT	.	.	.
+4	9679109	.	T	C	.	.	.
+4	10125765	.	A	T	.	.	.
+4	10125817	.	T	C	.	.	.
+4	10125817	.	T	A	.	.	.
+5	150860514	.	C	A	.	.	.
+21	33060745	.	G	C	.	.	.
