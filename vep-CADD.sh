@@ -7,8 +7,8 @@ cachedir=/nfs/production/flicek/ensembl/variation/data/VEP
 fasta=/nfs/production/flicek/ensembl/variation/data/Homo_sapiens.GRCh38.dna.toplevel.fa.gz
 
 vcf=input/test.vcf
-snvs=input/CADD_GRCh37/whole_genome_SNVs.tsv.gz
-indels=input/CADD_GRCh37/InDels.tsv.gz
+snvs=input/CADD/GRCh38/whole_genome_SNVs.tsv.gz
+indels=input/CADD/GRCh38/gnomad.genomes.r3.0.indel.tsv.gz
 
 perl $vep \
      --i $vcf \
