@@ -1,6 +1,6 @@
 #!/bin/sh
-#BSUB -J vep-CADD
-#BSUB -o logs/vep-CADD-%J.out
+#BSUB -J vep-CADD-GRCh38
+#BSUB -o logs/vep-CADD-GRCh38-%J.out
 
 vep=/hps/software/users/ensembl/repositories/nuno/ensembl-vep/vep
 cachedir=/nfs/production/flicek/ensembl/variation/data/VEP
@@ -12,7 +12,7 @@ indels=input/CADD/GRCh38/gnomad.genomes.r3.0.indel.tsv.gz
 
 perl $vep \
      --i $vcf \
-     --o output/${LSB_JOBNAME}-${LSB_JOBID}.txt \
+     --o output/${LSB_JOBNAME}-${LSB_JOBID}.vcf --vcf \
      --offline \
      --dir_cache $cachedir \
      --cache_version 105 \
